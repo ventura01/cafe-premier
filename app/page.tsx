@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProductsSection from "@/components/ProductsSection";
 import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ProductsSection />
+      <ContactUs />
       <Footer />
     </main>
   );

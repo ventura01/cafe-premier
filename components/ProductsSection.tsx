@@ -3,6 +3,7 @@ import React from "react";
 import { MdAddShoppingCart } from "react-icons/md";
 import { ProductsProps } from "@/data";
 import { products } from "@/data";
+import { racing_sans_one } from "@/data";
 type Props = {};
 
 const ProductsSection = (props: Props) => {
@@ -11,7 +12,7 @@ const ProductsSection = (props: Props) => {
       id="products"
       className="py-20 md:container md:mx-auto md:max-w-screen-xl"
     >
-      <h2 className="mb-24 text-center text-3xl font-bold text-neutral-800">
+      <h2 className={`${racing_sans_one.className} mb-24 text-center text-3xl font-bold text-neutral-800`}>
         Our Products
       </h2>
       <div className="grid grid-cols-1 mx-2 md:mx-0 rounded-3xl bg-neutral-800 shadow-xl md:grid-cols-4">

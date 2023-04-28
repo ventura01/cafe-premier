@@ -1,4 +1,5 @@
 import React from "react";
+import { racing_sans_one } from "@/data";
 import {
   MdWhatsapp,
   MdLocationOn,
@@ -13,14 +14,16 @@ const ContactUs = (props: Props) => {
   return (
     <section
       id="contactus"
-      className="md:container md:mx-auto md:max-w-screen-xl md:py-20 mx-2"
+      className="mx-2 md:container md:mx-auto md:max-w-screen-xl md:py-20"
     >
-      <div className="rounded-3xl bg-neutral-400 pt-10 md:pb-10 pb-2 shadow-xl md:px-10">
-        <h3 className="mb-10 text-center text-3xl font-bold text-neutral-800">
+      <div className="rounded-3xl bg-neutral-400 pb-2 pt-10 shadow-xl md:px-10 md:pb-10">
+        <h3
+          className={`${racing_sans_one.className} mb-10 text-center text-3xl font-bold text-neutral-800`}
+        >
           Contact Us
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col justify-center gap-y-4 md:px-20 px-5 mb-10 md:mb-0">
+          <div className="mb-10 flex flex-col justify-center gap-y-4 px-5 md:mb-0 md:px-20">
             <h4 className="text-left font-semibold text-neutral-800">
               Any question, write us.
             </h4>
@@ -46,7 +49,7 @@ const ContactUs = (props: Props) => {
             </div>
             {/* <MdSend /> */}
           </div>
-          <div className="rounded-3xl bg-white px-10 mx-2 md:mx-0 py-5 ">
+          <div className="mx-2 rounded-3xl bg-white px-10 py-5 md:mx-0 ">
             <div>
               <form action="" className="flex flex-col gap-y-4">
                 <div>

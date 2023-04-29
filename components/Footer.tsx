@@ -11,7 +11,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <footer id="contact" className="">
-      <div className="grid grid-cols-1 rounded-t-3xl bg-neutral-600 py-20 md:container md:mx-auto md:max-w-screen-xl md:grid-cols-3 mx-2 md:mt-0 mt-20">
+      <div className="grid grid-cols-1 rounded-t-3xl bg-neutral-600 py-20 md:container md:mx-auto md:max-w-screen-xl md:grid-cols-3 mx-2 md:mt-0 mt-20 shadow-2xl">
         <div className="flex flex-col items-center md:row-start-1 md:row-end-2 md:gap-y-5 row-start-3 md:col-start-1 md:col-end-2 row-end-4">
           <Image
             src="/logo-w.svg"

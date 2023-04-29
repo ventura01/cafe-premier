@@ -34,7 +34,7 @@ const HeroSection = (props: Props) => {
       </div>
       <div className="row-start-1 row-end-2 md:col-start-2 md:col-end-3">
         <Image
-          src="/hero-img.png"
+          src="/hero-img-2.png"
           width={450}
           height={450}
           alt="hero-img"

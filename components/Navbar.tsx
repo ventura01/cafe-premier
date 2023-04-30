@@ -11,23 +11,25 @@ const Navbar = (props: Props) => {
   const [open, setOpen] = useState(false);
   return (
     <nav
-      id="home"
-      className="py-10 md:container md:mx-auto md:max-w-screen-xl md:py-5"
+      id="navigation"
+      className="sticky top-0 z-50 bg-neutral-300 py-10 md:container md:mx-auto md:max-w-screen-xl md:py-5"
     >
       <div className="flex items-center justify-between px-5 md:px-0">
         <div>
-          <Image
-            src="/logo.svg"
-            width={120}
-            height={120}
-            alt="logo"
-            className="h-auto w-32"
-          />
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              width={120}
+              height={120}
+              alt="logo"
+              className="h-auto w-32"
+            />
+          </Link>
         </div>
         <div
           className={`${
             open
-              ? "absolute top-20 flex w-[90%] flex-col items-center gap-y-10 rounded-2xl bg-neutral-800 pb-5 pt-6 text-white"
+              ? "absolute top-24 flex w-[90%] flex-col items-center gap-y-10 rounded-2xl bg-neutral-800 pb-5 pt-6 text-white"
               : "hidden md:flex md:gap-x-10"
           }`}
         >
@@ -37,21 +39,10 @@ const Navbar = (props: Props) => {
                 ? "cursor-pointer text-sm text-white hover:text-neutral-500"
                 : "cursor-pointer text-sm text-neutral-800 hover:text-neutral-500"
             }`}
-            href="#home"
+            href="#"
             onClick={() => setOpen(false)}
           >
             Home
-          </Link>
-          <Link
-            className={`${
-              open
-                ? "cursor-pointer text-sm text-white hover:text-neutral-500"
-                : "cursor-pointer text-sm text-neutral-800 hover:text-neutral-500"
-            }`}
-            href="#contact"
-            onClick={() => setOpen(false)}
-          >
-            Contact
           </Link>
           <Link
             className={`${
@@ -63,6 +54,17 @@ const Navbar = (props: Props) => {
             onClick={() => setOpen(false)}
           >
             Products
+          </Link>
+          <Link
+            className={`${
+              open
+                ? "cursor-pointer text-sm text-white hover:text-neutral-500"
+                : "cursor-pointer text-sm text-neutral-800 hover:text-neutral-500"
+            }`}
+            href="#contactus"
+            onClick={() => setOpen(false)}
+          >
+            Contact Us
           </Link>
           <div className="flex md:hidden">
             <button className="rounded-full bg-orange-500 px-5 py-2 text-sm font-light text-white shadow-xl hover:text-neutral-500">
@@ -77,6 +79,12 @@ const Navbar = (props: Props) => {
               1
             </span>
           </div>
+          <div
+            className={`${
+              open &&
+              "fixed right-0 top-0 -z-[1] h-screen w-screen bg-gray-500 bg-opacity-25 backdrop-blur-sm md:hidden"
+            }`}
+          ></div>
           <div className="hidden md:flex">
             <button className="rounded-full bg-neutral-800 px-5 py-2 text-sm font-light text-white shadow-xl hover:text-neutral-500">
               Subscribe

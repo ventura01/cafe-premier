@@ -10,7 +10,7 @@ import ContactUs from "@/components/ContactUs";
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <ProductsSection />
       <ContactUs />

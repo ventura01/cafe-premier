@@ -26,7 +26,7 @@ const Footer = (props: Props) => {
           </p>
         </div>
         <div className="flex justify-center row-start-1 row-end-2 md:col-start-2 md:col-end-3 mb-12 md:mb-0">
-          <ul className="text-white">
+          <ul className="text-white text-sm">
             <li className="font-semibold text-lg">Company Info</li>
             <li>5007 Braun Pike</li>
             <li>Cambridgeshire</li>

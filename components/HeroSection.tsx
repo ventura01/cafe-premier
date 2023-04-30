@@ -9,7 +9,7 @@ type Props = {};
 const HeroSection = (props: Props) => {
   return (
     <section
-      id="header"
+      id="home"
       className="grid grid-cols-1 md:container md:mx-auto md:max-w-screen-xl md:grid-cols-3 md:py-20"
     >
       <div className="row-start-2 row-end-3 flex flex-col justify-center gap-y-10 px-5 py-20 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 md:px-0 md:py-0 md:pr-28">
